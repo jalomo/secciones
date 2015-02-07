@@ -98,7 +98,7 @@ class Company extends CI_Model{
 	* autor: jalomo <jalomo@hotmail.es>
 	*/
 	public function update_seccion_nombre($data, $id){
-        $this->db->update('seccion', $data, array('seccionId'=>$id));
+        $this->db->update('secciones', $data, array('seccionId'=>$id));
     }
 
 

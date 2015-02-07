@@ -180,5 +180,30 @@ class Companies extends MX_Controller {
         }                                              
         
     }
+
+    /*
+    * metodo para guardar una seccion
+    * autor: jalomo <jalomo@hotmail.es>
+    */
+    public function save_seccion(){
+        if($this->session->userdata('id'))
+        {   
+            $post=$this->input->post('save');
+            $this->Company->save_register('secciones', $post);
+        } 
+    }
+
+    /*
+    * metodo para guardar un campo .
+    * autor: jalomo <jalomo@hotmail.es>
+    */
+    public function save_campo(){
+        if($this->session->userdata('id'))
+        {   
+            $post=$this->input->post('save');
+            $this->Company->save_register('secciones', $post);
+        } 
+    }
+
 	
 }
